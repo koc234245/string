@@ -1,0 +1,7 @@
+product_name = input('Введите наименование товара:')
+product_quantity = input('Введите количество товара:')
+product_price = input('Введите цену товара:')
+product_totalprice = int(product_quantity) * int(product_price)
+deposit = input('Введите внесённую сумму:')
+change =  int(deposit) - int(product_totalprice)
+print('==============Чек=============','\nТовар:', product_name,'\nЦена:', product_quantity, 'кг', "*", product_price, 'тг/кг', '\nИтого:', product_totalprice, 'тг', '\nВнесенная сумма:', deposit,'\nСдача:', change, 'тг', '\n==============================')
